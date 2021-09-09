@@ -112,17 +112,20 @@ public class ClientServiceImpl implements ClientService {
 		double amountSubmitted = Double.parseDouble(data.get("amount").toString());
 		String itemType = (data.get("itemType").toString());
 
-		if (getClient(clientId).getClientStatus().compareTo("employee") == 0 && itemType != "grocery") {
+		if (getClient(clientId).getClientStatus().compareTo("employee") == 0 && !"grocery".equals(itemType)) {
 
-			totalDiscount = discountForEvery100(amountSubmitted) + (30 / 100 * amountSubmitted);
+			System.out.println("=====> itemType " + itemType);
+
+			totalDiscount = discountForEvery100(amountSubmitted) + (((30 * amountSubmitted) / 100));
+
 		}
 
-		if (getClient(clientId).getClientStatus().compareTo("affiliate") == 0 && itemType != "grocery") {
+		if (getClient(clientId).getClientStatus().compareTo("affiliate") == 0 && !"grocery".equals(itemType)) {
 
-			totalDiscount = discountForEvery100(amountSubmitted) + (10 / 100 * amountSubmitted);
+			totalDiscount = discountForEvery100(amountSubmitted) + (((10 * amountSubmitted) / 100));
 		}
 
-		if (getClient(clientId).getClientStatus().compareTo("customer") == 0 && itemType != "grocery") {
+		if (getClient(clientId).getClientStatus().compareTo("customer") == 0 && !"grocery".equals(itemType)) {
 			getClient(clientId).getClientDateCreated();
 
 			SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
@@ -138,7 +141,7 @@ public class ClientServiceImpl implements ClientService {
 			LocalDate startDate_l = startDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 			if (Period.between(startDate_l, LocalDate.now()).getYears() > 2) {
 
-				totalDiscount = discountForEvery100(amountSubmitted) + (5 / 100 * amountSubmitted);
+				totalDiscount = discountForEvery100(amountSubmitted) + (((5 * amountSubmitted) / 100));
 
 			} else {
 
