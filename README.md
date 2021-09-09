@@ -10,3 +10,8 @@
    java -jar "name of jar file".jar
    
 Application will start running in tomcat on port 9900
+
+# RetailWebsiteApi Documentation
+you can access the swagger documentation on the following url
+http://localhost:9900/swagger-ui.html#/
+
