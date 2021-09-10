@@ -48,7 +48,7 @@ localhost:9900/client/bill
 
 <p align="center">
   <img src="https://github.com/smakara/RetailWebsiteApi/blob/25cb4380349f5f9043ba8b554c4a7b344e40b76b/screenshots/all%20clients.png" width="350" title="customer list">
-      <img src=" https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/one%20customer.png" width="350" title="get one customer">
+      <img src="https://github.com/smakara/RetailWebsiteApi/blob/9ee6541a2fbc36aa010ff0d46c118e5ec495c6e5/screenshots/one%20customer.png" width="350" title="get one customer">
       <img src="https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/submit%20bill.png" width="350" title="submit bill">
       <img src="https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/swagger.png" width="350" title="swagger">
  
