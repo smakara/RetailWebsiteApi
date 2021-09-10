@@ -15,3 +15,14 @@ Application will start running in tomcat on port 9900
 you can access the swagger documentation on the following url
 http://localhost:9900/swagger-ui.html#/
 
+
+
+## Images/Screenshots
+
+
+<p align="center">
+  <img src="https://github.com/smakara/RetailWebsiteApi/blob/25cb4380349f5f9043ba8b554c4a7b344e40b76b/screenshots/all%20clients.png" width="350" title="hover text">
+  
+</p>
+
+
