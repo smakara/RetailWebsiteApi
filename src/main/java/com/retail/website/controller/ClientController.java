@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.retail.website.model.Client;
 import com.retail.website.service.ClientService;
 
@@ -42,8 +44,13 @@ public class ClientController {
 
 			map.put("clientData", clientService.getClientBill(data));
 
+			Gson gson = new Gson();
+			System.out.println("map====>  " + map.get("clientData").toString());
+			JsonObject jo = gson.fromJson(map.get("clientData").toString(), JsonObject.class);
+			System.out.println("bill ====>  " + jo.toString());
+
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.getStackTrace();
 		}
 		return map;
 	}

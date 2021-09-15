@@ -47,7 +47,7 @@ public class ClientServiceImpl implements ClientService {
 
 		Client client5 = new Client();
 		client5.setClientID(5);
-		client5.setClientDateCreated("2016-02-08");
+		client5.setClientDateCreated("2021-02-08");
 		client5.setClientName("Tsepang Mokoroko");
 		client5.setClientStatus("customer");
 
@@ -90,7 +90,7 @@ public class ClientServiceImpl implements ClientService {
 
 		Client client5 = new Client();
 		client5.setClientID(5);
-		client5.setClientDateCreated("2016-02-08");
+		client5.setClientDateCreated("2021-02-08");
 		client5.setClientName("Tsepang Mokoroko");
 		client5.setClientStatus("customer");
 
@@ -165,5 +165,10 @@ public class ClientServiceImpl implements ClientService {
 
 		return bill > 100 ? discount : 0; // if bill is greater than 100 we discount else we dont
 	}
+
+//	 public double discount(double ) {
+//		 
+//		 return 2.0;
+//	 }
 
 }
