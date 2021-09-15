@@ -51,6 +51,7 @@ localhost:9900/client/bill
       <img src="https://github.com/smakara/RetailWebsiteApi/blob/9ee6541a2fbc36aa010ff0d46c118e5ec495c6e5/screenshots/one%20customer.png" width="350" title="get one customer">
       <img src="https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/submit%20bill.png" width="350" title="submit bill">
       <img src="https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/swagger.png" width="350" title="swagger">
+	 <img src="https://github.com/smakara/RetailWebsiteApi/blob/master/screenshots/jacoco coverage.png" width="350" title="swagger">
  
 </p>
 
